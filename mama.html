@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte d'anniversaire</title>
+    <link rel="stylesheet" href="maman.css">
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <h1>Joyeux anniversaire Pour la plus Belle Maman !</h1>
+            <p>Que cette journée spéciale t'apporte joie, bonheur et plein de belles surprises.</p>
+            <p>Profite bien de chaque moment !</p>
+        </div>
+        <button onclick="openPopup()">Cliquez ici pour ajouter un message personnalisé</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Ajouter un message personnalisé</h2>
+            <textarea id="message" placeholder="Écrivez votre message ici..."></textarea>
+            <button onclick="addMessage()">Ajouter le message</button>
+        </div>
+    </div>
+
+    <script src="maman.js"></script>
+</body>
+</html>
